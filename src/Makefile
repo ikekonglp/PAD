@@ -9,7 +9,7 @@ CC = g++
 COMMANDLINE_OPTIONS = /dev/ttyS0
 
 # Compiler options during compilation
-COMPILE_OPTIONS = -Wno-sign-compare  -fdiagnostics-color=auto -march=native -ansi -pedantic -Wall -std=c++11 -O3 -I.
+COMPILE_OPTIONS = -Wno-sign-compare -march=native -ansi -pedantic -Wall -std=c++11 -O2 -I.
 
 #Header include directories
 HEADERS =
