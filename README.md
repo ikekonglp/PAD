@@ -4,6 +4,13 @@ Dependency parsers are fast, accurate, and produce easy-to-interpret results, bu
 
 The PAD parser produces phrases-after-dependencies. Give it the output of a dependency parser and it will produce the optimal constrained phrase-structure parse.
 
+## Installation
+
+```
+cd src
+make
+```
+
 ## How to Use.
 
 ```
