@@ -13,6 +13,12 @@ The PAD parser produces phrases-after-dependencies. Give it the output of a depe
 erely)   (JJ commercial)   (CC and)   (JJ lightweight) ) ) )   (. .) ) )                                          
 ```
 
+or
+
+```
+./pad --model model --sentences test.predicted.conll
+```
+
 
 ```
 >./pad --help
@@ -34,7 +40,8 @@ PAD: Phrases After Dependencies
 To train a new model, you'll need a lexicalized grammar file and gold annotations. The file formats are described below. 
 
 ```
-> ./padt --conll sents.conll --annotations sents.ptb --grammar ptb.rules -m pad.model
+> ./padt --grammar rules --model model --annotations parts --conll train.conll --epochs 5 --simple_features
+
 ```
 
 PADt takes the following options.
@@ -53,19 +60,27 @@ Options:
 --annotations, -a   (Required) Gold phrase structure file.
 --epochs[=10], -e:  Number of epochs.
 --lambda[=0.0001]:  L1 Regularization constant.
---simple_features   Use simple set of features (debugging).
+--simple_features   Use simple set of features.
 ```
 
 
 We also provide python scripts for extracting a grammar and annotations from phrase-structure trees using the Collins head rules. 
 
-
-TODO: Add docs here.
+See python/README.md
 
 ## Cite
 
-
 ```
+@InProceedings{kong-15,
+  author    = {Lingpeng Kong and Alexander M. Rush and Noah A. Smith},
+  title     = {Transforming Dependencies into Phrase Structures},
+  booktitle = {Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = jun,
+  year      = {2015},
+  address   = {Denver, Colorado, USA},
+  publisher = {Association for Computational Linguistics},
+  sbooktitle = {NAACL-HLT~2015}
+}
 
 ```
 
