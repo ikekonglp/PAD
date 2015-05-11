@@ -11,7 +11,7 @@ cd src
 make
 ```
 
-## How to Use.
+## How to Use
 
 ```
 > ./dep_parser sents.txt | ./pad -m pad.model | head
@@ -44,11 +44,10 @@ PAD: Phrases After Dependencies
 
 ## How to Train
 
-To train a new model, you'll need a lexicalized grammar file and gold annotations. The file formats are described below. 
+To train a new model, you'll need a grammar file and gold annotations. The file formats are described below. 
 
 ```
 > ./padt --grammar rules --model model --annotations parts --conll train.conll --epochs 5 --simple_features
-
 ```
 
 PADt takes the following options.
@@ -73,7 +72,7 @@ Options:
 
 We also provide python scripts for extracting a grammar and annotations from phrase-structure trees using the Collins head rules. 
 
-See python/README.md
+Please refers to python/README.md
 
 ## Cite
 
