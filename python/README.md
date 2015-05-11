@@ -27,7 +27,7 @@ python Generator.py 1 --inputf /home/username/PTB/penn_tb_3.0_preprocessed/train
 
 To generate CONLL format dependency trees (extract dependencies) from phrase structure treebank, simply use:
 ```
-python Generator.py 2 --inputf /media/lingpenk/Data/PTB/penn_tb_3.0_preprocessed/train.withtop > train.conll
+python Generator.py 2 --inputf /media/username/Data/PTB/penn_tb_3.0_preprocessed/train.withtop > train.conll
 ```
 
 ##How to train
